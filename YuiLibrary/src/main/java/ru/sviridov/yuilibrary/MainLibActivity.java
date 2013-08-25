@@ -16,6 +16,7 @@ public class MainLibActivity extends Activity {
 
         TextView viewById = (TextView) findViewById(R.id.tvInfo);
         viewById.setText(R.string.info_text);
+        viewById.setTextColor(getResources().getColor(android.R.color.holo_blue_dark));
     }
 
 
