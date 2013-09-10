@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainLibActivity extends Activity {
 
@@ -17,6 +18,7 @@ public class MainLibActivity extends Activity {
         TextView viewById = (TextView) findViewById(R.id.tvInfo);
         viewById.setText(R.string.info_text);
         viewById.setTextColor(getResources().getColor(android.R.color.holo_blue_bright));
+        Toast.makeText(this,"started",Toast.LENGTH_SHORT).show();
     }
 
 
