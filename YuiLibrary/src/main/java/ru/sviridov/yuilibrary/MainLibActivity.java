@@ -9,13 +9,19 @@ import android.widget.Toast;
 
 public class MainLibActivity extends Activity {
 
+    private TextView viewById;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lib_main);
         setTitle(R.string.lib_title);
 
-        TextView viewById = (TextView) findViewById(R.id.tvInfo);
+        confingAll();
+    }
+
+    public void confingAll() {
+        viewById = (TextView) findViewById(R.id.tvInfo);
         viewById.setText(R.string.info_text);
         viewById.setTextColor(getResources().getColor(android.R.color.holo_blue_bright));
         Toast.makeText(this,"ended",Toast.LENGTH_SHORT).show();
@@ -28,5 +34,8 @@ public class MainLibActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
+
+    public TextView getViewById() {
+        return viewById;
+    }
 }
