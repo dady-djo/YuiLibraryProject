@@ -23,6 +23,6 @@ public class MainLibActivityTest extends ActivityInstrumentationTestCase2<MainLi
     }
 
     public void testConfigAll(){
-        assertNull(activity.getViewById());
+        assertNotNull(activity.getViewById());
     }
 }
