@@ -24,7 +24,7 @@ public class MainLibActivity extends Activity {
         viewById = (TextView) findViewById(R.id.tvInfo);
         viewById.setText(R.string.info_text);
         viewById.setTextColor(getResources().getColor(android.R.color.holo_blue_bright));
-        Toast.makeText(this,"ended",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"new branch feature 1",Toast.LENGTH_SHORT).show();
     }
 
 
